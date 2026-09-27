@@ -1,0 +1,12 @@
+.cert-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin: 42px 0; }
+.cert-heading h2 { font: 600 clamp(38px, 4.8vw, 66px)/1 'Playfair Display', serif; letter-spacing: -.04em; margin: 0; }
+.cert-heading h2 em { color: var(--accent); }
+.cert-heading > p { max-width: 370px; color: var(--muted); line-height: 1.6; margin: 0; }
+.credentials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.credential-card { border: 1px solid var(--line); padding: 25px; min-height: 285px; display: flex; flex-direction: column; align-items: flex-start; }
+.certificate-mark { width: 42px; height: 42px; display: grid; place-items: center; background: var(--accent); color: #fff; border-radius: 50%; font: 11px 'DM Mono', monospace; }
+.credential-type { font: 500 10px 'DM Mono', monospace; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); margin: 24px 0 10px; }
+.credential-card h3 { font: 600 23px/1.12 'Playfair Display', serif; letter-spacing: -.03em; margin: 0; }
+.credential-card > p:not(.credential-type) { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 10px 0 22px; }
+.credential-card a { margin-top: auto; font-size: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
+@media (max-width: 650px) { .cert-heading { display: block; } .cert-heading h2 { margin-bottom: 22px; } .credentials-grid { grid-template-columns: 1fr; } .credential-card { min-height: 235px; } }
